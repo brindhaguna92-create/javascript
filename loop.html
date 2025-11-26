@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    
+     function show()
+        {
+            var n1=parseInt(document.getElementById("t1").value);
+            var n2=parseInt(document.getElementById("t2").value);
+            
+            var s=0;
+           /* for( var i=n1;i<=n2;i++){
+                s=s+i;
+                if(i==n2)
+                document.write(`${i}`);
+            else
+                document.write(`${i}+`);
+            }
+            document.write("="+s);
+        }*/
+
+        //or
+          for( var i=n1;i<n2;i++){
+                s=s+i;
+                document.write(`${i}+`);
+            }
+            document.write(n2+"="+(s+n2));
+        }
+    </script>
+</head>
+<body>
+        <input type="text" id="t1" placeholder="enter starting value"><br>
+        <input type="text" id="t2" placeholder="enter ending value"><br>
+
+     <button onclick="show()">clickme</button>
+    
+    
+</body>
+</html>
